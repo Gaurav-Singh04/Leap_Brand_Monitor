@@ -130,22 +130,22 @@ def sentiment_news(input_csv, output_csv):
 def main():
     print("Running sentiment analysis for Reddit JSON...")
     reddit_sentiment(
-        "brand_monitor/data/raw/reddit_leapscholar.json",
-        "brand_monitor/data/processed/reddit_sentiment.csv"
+        "data/raw/reddit_leapscholar.json",
+        "data/processed/reddit_sentiment.csv"
     )
     print("Reddit sentiment saved to brand_monitor/data/processed/reddit_sentiment.csv")
 
     print("Running sentiment analysis for Twitter and News CSVs...")
     sentiment_twitter(
-        "brand_monitor/data/raw/leapscholar_tweets.csv",
-        "brand_monitor/data/processed/twitter_sentiment.csv"
+        "data/raw/leapscholar_tweets.csv",
+        "data/processed/twitter_sentiment.csv"
     )
     print("Twitter sentiment saved to brand_monitor/data/processed/twitter_sentiment.csv")
 
     print("Running sentiment analysis for News CSVs...")
     sentiment_news(
-        "brand_monitor/data/raw/leapscholar_news_leap.csv",
-        "brand_monitor/data/processed/news_sentiment.csv"
+        "data/raw/leapscholar_news_leap.csv",
+        "data/processed/news_sentiment.csv"
     )
     print("News sentiment saved to brand_monitor/data/processed/news_sentiment.csv")
 

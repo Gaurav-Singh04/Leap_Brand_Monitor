@@ -52,14 +52,14 @@ def extract_top_keywords(input_csv, output_csv, top_n=15):
 if __name__ == "__main__":
     print("Extracting top keywords from news articles...")
     extract_top_keywords(
-        "brand_monitor/data/raw/leapscholar_news_keywords.csv",
-        "brand_monitor/data/processed/news_top_keywords.csv"
+        "data/raw/leapscholar_news_keywords.csv",
+        "data/processed/news_top_keywords.csv"
     )
     print("Top keywords saved to brand_monitor/data/processed/news_top_keywords.csv")
 
     print("Extracting top keywords from reddit posts...")
     extract_reddit_keywords(
-        "brand_monitor/data/raw/reddit_leapscholar.json",
-        "brand_monitor/data/processed/reddit_top_keywords.csv"
+        "data/raw/reddit_leapscholar.json",
+        "data/processed/reddit_top_keywords.csv"
     )
     print("Top keywords saved to brand_monitor/data/processed/reddit_top_keywords.csv")

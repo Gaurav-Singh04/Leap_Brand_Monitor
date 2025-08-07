@@ -49,7 +49,7 @@ for query in KEYWORD_QUERIES:
         keyword_articles.append(article_info)
 
 # Save LEAP articles for sentiment analysis
-leap_filename = "leapscholar_news_leap.csv"
+leap_filename = "data/raw/leapscholar_news_leap.csv"
 with open(leap_filename, mode="w", encoding="utf-8", newline="") as csv_file:
     fieldnames = ["source_name", "title", "url"]
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
@@ -59,7 +59,7 @@ with open(leap_filename, mode="w", encoding="utf-8", newline="") as csv_file:
 print(f"Saved {len(leap_articles)} LEAP news articles to '{leap_filename}'")
 
 # Save KEYWORD articles for keyword extraction
-keyword_filename = "leapscholar_news_keywords.csv"
+keyword_filename = "data/raw/leapscholar_news_keywords.csv"
 with open(keyword_filename, mode="w", encoding="utf-8", newline="") as csv_file:
     fieldnames = ["source_name", "title", "url"]
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)

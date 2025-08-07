@@ -63,4 +63,4 @@ def fetch_reddit_leapscholar_posts_comments_json(output_json, max_posts=50, max_
 
 
 if __name__ == "__main__":
-    fetch_reddit_leapscholar_posts_comments_json("brand_monitor/data/raw/reddit_leapscholar.json")
+    fetch_reddit_leapscholar_posts_comments_json("data/raw/reddit_leapscholar.json")

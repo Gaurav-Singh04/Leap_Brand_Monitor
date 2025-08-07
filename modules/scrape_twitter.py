@@ -59,7 +59,8 @@ for query in QUERIES:
     time.sleep(900)  # Avoid hitting rate limit
 
 # ====== SAVE TO CSV ======
-filename = f"leapscholar_tweets_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+
+filename = f"data/raw/leapscholar_tweets_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 
 with open(filename, mode="w", encoding="utf-8", newline="") as csv_file:
     fieldnames = [

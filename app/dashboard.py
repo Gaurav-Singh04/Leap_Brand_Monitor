@@ -10,10 +10,10 @@ import plotly.express as px
 st.set_page_config(page_title="LeapScholar Brand Perception Monitor", layout="wide")
 
 # Load data
-twitter_df = pd.read_csv(r"brand_monitor\data\processed\twitter_sentiment.csv")
-news_df = pd.read_csv(r"brand_monitor\data\processed\news_sentiment.csv")
+twitter_df = pd.read_csv(r"data/processed/twitter_sentiment.csv")
+news_df = pd.read_csv(r"data/processed/news_sentiment.csv")
 try:
-    keywords_df = pd.read_csv(r"brand_monitor\data\processed\news_top_keywords.csv")
+    keywords_df = pd.read_csv(r"data/processed/news_top_keywords.csv")
 except Exception:
     keywords_df = pd.DataFrame(columns=["keyword", "frequency"])
 
