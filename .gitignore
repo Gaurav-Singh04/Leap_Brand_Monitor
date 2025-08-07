@@ -58,12 +58,6 @@ coverage.xml
 .env
 .env.*
 
-# Data files
-*.csv
-*.json
-!brand_monitor/data/raw/.gitkeep
-!brand_monitor/data/processed/.gitkeep
-
 # Logs
 *.log
 
@@ -82,3 +76,5 @@ transformers_cache/
 *.tar.gz
 *.tar
 *.rar
+
+.venv
